@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;  
+    text-align: right;
+}
+.YB{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.242),rgba(0, 0, 0, 0.251)),url(R.jpeg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 0;
+}
+nav{
+    position: fixed; /* Fixe la barre de navigation à droite de l'écran */
+    top: 0; /* Positionne la barre de navigation au sommet de la page */
+    right: 0; /* Positionne la barre de navigation à droite de la page */
+    padding-top: 20px;
+    
+    justify-content: space-between;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 7%;
+    
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: left;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.4em;
+}
+nav ul li a:hover{
+    color:#ffdb51;
+    transform: scale(1,6);
+    transition: 0.6s;
+    
+}
+.Titre{
+    padding-top: 310px;
+    padding-right:53%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+.Soustitre{
+    margin-bottom: 20%;
+    padding-top: 310px;
+    padding-right:63%;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+.rectangle{
+    width: 141px;
+    height: 48px; 
+    top: 944px;
+    left: 87px;
+    background-color: #001E58
+}
+
