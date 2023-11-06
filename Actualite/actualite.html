@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page d'actualités | Saint Ay</title>
+    <link rel="stylesheet" href="styleActualite.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scriptActualite.js" defer></script>
+  </head>
+
+  <body>
+    <button id="scrollToTopButton" onclick="scrollToTop()">&#8679;</button>
+    <nav>
+      <ul><li><a href="../index.html">Accueil</a></li>
+          <li><a href="../Raafet/index.html">Municipalité</a></li>
+          <li><a href="../Actualite/actualite.html">Actualités</a></li>
+          <li><a href="../Jeunesse/Jeunesse.html">Jeunesse</a></li>
+      </ul>
+  </nav>
+    <a id="actuLink" href="https://www.larep.fr/saint-ay-45130/" target="blank">
+      <section class="container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img id="slide-1" src="assets/slider/S1.webp" alt="" />
+            <img id="slide-2" src="assets/slider/S2.webp" alt="" />
+            <img id="slide-3" src="assets/slider/S3.webp" alt="" />
+            <img id="slide-3" src="assets/slider/S4.webp" alt="" />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+          </div>
+        </div></section
+    ></a>
+    
+    <div class="card-container">
+      <div class="card">
+        <img src="assets/cards/C1.webp" alt="" />
+        <div class="card-content">
+          <h3>Répondre à un besoin croissant</h3>
+          <p class="cardText">
+            Huit mois après son ouverture, Senior compagnie Terres du Val de
+            Loire a inauguré son agence d’aide à domicile de Saint-Ay, en
+            présence du maire Frédéric Cuillerier et de l’élu Carl Lequertier,
+            d’Anna Lamboul, vice-présidente de la communauté de communes et des
+            partenaires.
+          </p>
+          <a
+            href="https://www.larep.fr/widgetRss/saint-ay-45130/actualites/repondre-a-un-besoin-croissant_14375916/"
+            class="btn"
+            target="_blank"
+            >Lire plus</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/cards/C2.webp" alt="" />
+        <div class="card-content">
+          <h3>Arts en partage toujours aussi dynamique</h3>
+          <p class="cardText">
+            Saint-Ay. Le prochain Fest’Ay Val d’Arts en partage aura lieu en
+            février 2024. L’association Arts en partage a tenu son assemblée
+            générale, en présence de Pascal Foulon, premier adjoint au maire.
+            L’association compte une cinquantaine d’adhérents.
+          </p>
+          <a
+            href="https://www.larep.fr/widgetRss/saint-ay-45130/actualites/arts-en-partage-toujours-aussi-dynamique_14374616/"
+            class="btn"
+            target="_blank"
+            >Lire plus</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/cards/C3.webp" alt="" />
+        <div class="card-content">
+          <h3>L’hommage aux grands hommes</h3>
+          <p class="cardText">
+            Facebook Twitter Diminuer la taille du texte Augmenter la taille du
+            texte Saint-Ay. Une belle mise en valeur du patrimoine Agylien.
+            Saint-Ay a rendu hommage à son fondateur Agylus et à son écrivain de
+            passage, François Rabelais, ce week-end, à l’occasion des Journées
+            du patrimoine. Deux lieux ont profité d’une remise à neuf, grâce à
+            l’ardeur de bénévoles et des services municipaux : l’église et la
+            fontaine de Rabelais.
+          </p>
+          <a
+            href="https://www.larep.fr/widgetRss/saint-ay-45130/loisirs/lhommage-aux-grands-hommes_14373273/"
+            class="btn"
+            target="_blank"
+            >Lire plus</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="Form">
+      <div class="form-container">
+        <div class="title">Déposer une offre</div>
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Nom</span>
+              <input type="text" placeholder="Nom de l'employeur" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Prénom</span>
+              <input type="text" placeholder="Prénom de l'employeur" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Intitulé de l'offre</span>
+              <input
+                type="text"
+                placeholder="Entrez l'intitulé de l'offre"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Description de l'offre</span>
+              <input
+                type="text"
+                placeholder="Entrez la description de l'offre"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Mail</span>
+              <input type="text" placeholder="exemple@email.com" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Téléphone</span>
+              <input type="text" placeholder="Votre numéro de téléphone" required />
+            </div>
+          </div>
+          <div class="job-details">
+            <input type="radio" name="job" id="dot-1" />
+            <input type="radio" name="job" id="dot-2" />
+            <input type="radio" name="job" id="dot-3" />
+            <span class="job-title">Statut du collaborateur</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="job">Salarié</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="job">Alternant</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="job">Bénévole</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Déposer l'offre" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+
+      <div class="container">
+          <div class ="sec aboutus">
+              <h2>Ville de Saint-Ay</h2>
+              <img src="assets/blason.png"/>
+              <ul class="sci">
+                  <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+              </ul>
+          </div>
+          <div class="list">
+                  <ol>
+                      <li><a href="lien-vers-portail-famille"><span>Portail Famille</span></a></li>
+                      <li><a href="lien-vers-service-municipaux"><span>Service Municipaux</span></a></li>
+                      <li><a href="lien-vers-horaires-mairie"><span>Horaires de la mairie</span></a></li>
+                      <li><a href="https://www.canva.com/"><span>Actualités</span></a></li>
+                  </ol>
+          </div>
+          <div class ="sec contact">
+              <h2>Contact</h2>
+              <ul class="info">
+                  <li>
+                      <span><i class="fa-solid fa-location-dot"></i></span>
+                      <span>Place de la Mairie,<br> 45130 Saint-Ay,<br>
+                            Centre-Val de Loire</span>
+                  </li>
+                  <li>
+                      <span><i class="fa-solid fa-phone"></i></span>
+                      <span><a href="tel:023888444">02 38 88 44 44</a></span>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+  </footer>
+  </body>
+</html>
