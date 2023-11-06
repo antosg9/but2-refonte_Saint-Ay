@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prise de Rendez-vous</title>
+    <link rel="stylesheet" type="text/css" href="stylerdv.css">
+    <link rel="stylesheet" type="text/css" href="CSS-REP.css">
+    
+    <!-- Inclure la bibliothèque FullCalendar -->
+</head>
+<body>
+    <header>
+        <h1>Prise de Rendez-vous</h1>
+    </header>
+    <main>
+        <button id="scrollToTopButton" onclick="scrollToTop()">&#8679;</button>
+        <button id="retour" onclick="retournerPagePrecedente()">Retourner à la page précédente</button>
+        <form id="appointment-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time">Heure :</label>
+            <select id="time" name="time" required>
+                <!-- Options de créneaux horaires générées dynamiquement -->
+            </select><br>
+
+            <!-- Champ pour le sujet du rendez-vous -->
+            <label for="subject">Sujet du Rendez-vous :</label>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <!-- Conteneur pour le calendrier -->
+            <div id="calendar"></div>
+
+            <input type="submit" value="Réserver le rendez-vous">
+        </form>
+    </main>
+
+    <!-- Inclure la bibliothèque FullCalendar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+
+    <!-- Votre code JavaScript pour le calendrier -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                // Configurer les événements du calendrier ici
+                events: [
+                    {
+                        title: 'Rendez-vous disponible',
+                        start: '2023-10-16T09:00:00',
+                        end: '2023-10-16T09:30:00',
+                        allDay: false
+                    },
+                    // Ajoutez d'autres créneaux horaires disponibles ici
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+
+    <!-- Inclure le fichier JavaScript pour la génération des options de créneaux horaires -->
+    <script src="javardv.js"></script>
+    <script src="JS-REP.js"></script>
+    <script>
+        function retournerPagePrecedente() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

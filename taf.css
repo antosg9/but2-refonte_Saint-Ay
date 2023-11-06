@@ -1,0 +1,13 @@
+
+
+body {background: #E8F2FB} 
+
+.hdr  {font-family: Arial;  font-size: large;  font-weight:bold ;color:#00BFFF;    text-align: center; /* justifiée */;}
+.txt  {font-family: Arial; font-size: medium; color: #000088} 
+.txt2 {font-family: Arial; font-size: medium; color: #000088} 
+.txtTemp {font-family: Arial; font-size: medium; color: #000088} 
+
+
+
+a:hover {color:#FF00FF;text-decoration:underline;}
+
