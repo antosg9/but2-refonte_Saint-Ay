@@ -1,0 +1,624 @@
+/* Réinitialisation des marges et des espacements pour tous les éléments HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilisation de la police 'Poppins' pour l'ensemble du site avec un poids de police en gras */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* Style de la barre de navigation (NAV BAR) */
+nav{
+  width: 100%;
+  position: fixed; /* Fixe la barre de navigation à droite de l'écran */
+  top: 0; /* Positionne la barre de navigation au sommet de la page */
+  right: 0; /* Positionne la barre de navigation à droite de la page */
+  padding-top: 20px;
+  z-index: 10;
+  justify-content: space-between;
+  text-align: right;
+  padding-top: 30px;
+  transition: 0.45s;
+  
+}
+
+#icon{
+width: 3%;
+cursor: pointer;
+right: 10%;
+top: 10%;
+}
+
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 10px;
+  text-align: left;
+}
+nav ul li a{
+  color:white;
+  text-decoration: none;
+  text-align: right;
+  font-size: 1.4em;
+}
+nav ul li a:hover{
+  color:#ffdb51;
+  transform: scale(1,6);
+  transition: 0.6s;
+  
+}
+nav.sticky{
+  height: 6%;
+  background-color: #001E58;
+  transition: 0.6s;
+  width: 39%;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding-bottom: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-70%, -50%);
+}
+nav ul li a.sticky{
+  color:white;
+  text-decoration: none;
+  text-align: right;
+  font-size: 100%;
+}
+
+/* Style de l'en-tête (header) de la page */
+header {
+  background-image:url('IMG/SCH.png');
+  background-size: 1920px 750px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+/* Style des sections de contenu */
+.section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Style des sections avec fond blanc */
+.white {
+  background-color: #fff;
+}
+
+/* Style des sections avec fond gris */
+.gray {
+  background-color: #D9D9D9;
+}
+
+/* Style des sections de grande hauteur */
+.large {
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* Style des sections de petite hauteur (avec position absolue) */
+.small {
+  height: 30vh;
+  background-color: #D9D9D9;
+  position: absolute;
+  top: 350px;
+  left: 1px;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style du titre h2 dans les sections de petite hauteur */
+.small h2 {
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card, .card1, .card2, .card3, .card4 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  position: absolute;
+}
+
+.card {
+  top: 700px;
+  left: 300px;
+}
+
+.card1 {
+  top: 700px;
+  left: 800px;
+}
+
+.card2 {
+  top: 700px;
+  left: 1300px;
+}
+
+.card3 {
+  top: 1050px;
+  left: 550px;
+}
+
+.card4 {
+  top: 1050px;
+  left: 1050px;
+}
+
+.card:hover, .card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  border-color: #333;
+}
+
+.card img, .card1 img, .card2 img, .card3 img, .card4 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.card:hover img, .card1:hover img, .card2:hover img, .card3:hover img, .card4:hover img {
+  transform: rotate(10deg);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .overlay, .card1:hover .overlay, .card2:hover .overlay, .card3:hover .overlay, .card4:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+  position: absolute;
+  left: 200px;
+}
+
+.image {
+  position: absolute;
+  right: 200px;
+  flex: 0.5;
+  text-align: right;
+}
+
+.image img {
+  width: 550px;
+  height: auto;
+}
+
+#section2 {
+  position: relative;
+}
+
+#section2 h1 {
+  text-align: left;
+  left: 10px;
+}
+
+#section2 p {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+#section2 p:nth-of-type(4) {
+  margin-top: 20px;
+}
+
+#section2 p:nth-of-type(8) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section2 p:nth-of-type(1) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section2 p:nth-of-type(6) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section3 p:nth-of-type(6) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section3 p:nth-of-type(8) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section3 p:nth-of-type(11) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section3 p:nth-of-type(12) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section3 p:nth-of-type(1) {
+  margin-top: 20px;
+  text-align: center;
+}
+.txt {
+  flex: 1;
+  position: absolute;
+  right: 200px;
+}
+.pic {
+  position: absolute;
+  left: 300px;
+  flex: 0.5;
+  text-align: right;
+}
+
+.pic img {
+  width: 400px;
+  height: auto;
+}
+#section4 p:nth-of-type(1) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section4 p:nth-of-type(6) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section4 p:nth-of-type(7) {
+  margin-top: 20px;
+  text-align: center;
+}
+#section4 p:nth-of-type(8) {
+  margin-top: 20px;
+  text-align: center;
+}
+/*.tx {
+  flex: 1;
+  position: absolute;
+  align-items: center;
+}
+.pict {
+  position: absolute;
+  flex: 0.5;
+  text-align: right;
+}
+*/
+.pict img {
+  width: 750px;
+  height: auto;
+}
+/* Ajoutez une classe CSS pour les sections que vous souhaitez animer */
+/*.animated-section {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}*/
+/* Styles pour les sections animées visibles */
+/*.animated-section.visible {
+  opacity: 1;
+}*/
+/* Ajoutez une classe CSS pour les sections que vous souhaitez animer */
+.animated-section {
+  transform: translateX(-100%); /* Déplace le contenu vers la gauche en dehors de l'écran */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Ajoutez une classe pour les sections visibles */
+.animated-section.visible {
+  transform: translateX(0); /* Déplace le contenu vers sa position finale (0) */
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+.card6 {
+  background: #FFDB51;width: 700px; /* Ajustez la largeur pour le mode paysage */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  margin: 200px;
+  display: flex; /* Utilisez un conteneur flex pour gérer la mise en page */
+}
+
+.card-content {
+  background: #FFDB51;
+  padding: 16px;
+  flex-direction: column; /* Alignez le texte et le bouton en colonne */
+  justify-content: space-between; /* Placez-les en haut et en bas */
+}
+
+.card-content h2{
+  margin-top: 20px;
+  text-align: justify;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.dk-footer-form {
+  margin-top: 70px;
+  position: relative;
+}
+
+.dk-footer-form input[type=email] {
+  padding: 14px 28px;
+  border-radius: 50px;
+  background: #ffffff;
+  border: 1px solid #D9D9D9;
+}
+
+.dk-footer-form input::-webkit-input-placeholder,
+.dk-footer-form input::-moz-placeholder,
+.dk-footer-form input:-ms-input-placeholder,
+.dk-footer-form input::-ms-input-placeholder,
+.dk-footer-form input::-webkit-input-placeholder {
+  color: #333333;
+  font-size: 14px;
+}
+
+.dk-footer-form input::placeholder {
+  color: #878787;
+  font-size: 14px;
+}
+
+.dk-footer-form button[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 24px 12px 17px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid #4285f4;
+  background: #001E58;
+  color: #fff;
+}
+
+.dk-footer-form button:hover {
+  cursor: pointer;
+}
+footer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #D9D9D9;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+footer .container .sec{
+  margin-right: 40px;
+}
+
+footer .container h2{
+  position: relative;
+  color: #2c2727;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .container h2:before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height:5px;
+  background: #001E58;
+}
+
+footer .container .aboutus img {
+  margin-top: 15px;
+  margin-left: 25%;
+  max-width: 42%;
+  max-height: 42%;
+  object-fit: cover;
+}
+
+.sci{
+  margin-top: 20px;
+  display: flex;
+}
+.sci li{
+  list-style:none;
+}
+
+.sci li a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #001E58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.sci li a:hover{
+  background: #0f9d58;
+}
+
+
+
+ul li{
+  list-style: none;
+  text-align: justify;
+  text-align: center;
+}
+
+ul li a{
+  color: #2c2727;
+  text-decoration: none;
+}
+
+
+.contact .info li:nth-child(1){
+  margin-top:25%;
+}
+
+.contact .info li:nth-child(2){
+  margin-top:25%;
+}
+
+.contact .info li a:hover{
+  color: #0f9d58;
+}
+
+
+.list{
+  margin-top: 6.5%;
+  position: relative;
+  width: 25%;
+}
+
+ol {
+  list-style: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+ol li {
+  font-size: 1rem;
+  padding: 3% 5%;
+  margin: 10px 10px;
+  background: #D9D9D9;
+  z-index: 5;
+  position: relative;
+  cursor: pointer;
+  transition: all .4s;
+  color: black;
+}
+
+.list ol li a {
+  text-decoration: none;
+  color: #2c2727;
+}
+
+ol li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  z-index: -1;
+  transition: all .4s;
+}
+
+ol li:hover::before {
+  width: 100%;
+}
+
+ol li:nth-child(1)::before {
+  background: #4285f4;
+}
+
+ol li:nth-child(2)::before {
+  background: #db4437;
+}
+
+ol li:nth-child(3)::before {
+  background: #f4b400;
+}
+
+ol li:nth-child(4)::before {
+  background: #0f9d58;
+}
+
+ol li:hover {
+  transform: translateX(20px);
+}
+
+/* Média requête pour les petits écrans */
+@media (max-width: 768px) {
+  footer {
+      padding: 50px 10px; /* Ajustez le padding pour les écrans plus petits si nécessaire */
+  }
+
+  .container {
+      width: 100%;
+      flex-direction: column; /* Changez la direction pour empiler les éléments */
+  }
+
+  ul li {
+      text-align: center; /* Centrer le texte pour les petits écrans */
+  }
+
+  .list{
+      width: 100%;
+  }
+}
+
+/* Média requête pour les écrans très petits */
+@media (max-width: 480px) {
+  .list {
+      width: 100%; /* Étirez la liste sur la largeur de l'écran */
+  }
+  .contact .info {
+      width: 100%; /* Étirez les informations sur la largeur de l'écran */
+  }
+}
+
+/* Styles pour le bouton de retour en haut */
+#scrollToTopButton {
+  display: none ;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #a4cbf5;
+  color: #ffffff;
+  border: none;
+  border-radius: 500%;
+  cursor: pointer;
+  font-size: 160%;
+  text-align: center;
+  z-index: 99999;
+
+
+}
+
+#scrollToTopButton:hover {
+  background-color: #0056b3;
+}
