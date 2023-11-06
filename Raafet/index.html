@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+    <meta charset="UTF-8">
+    <title>Municipalité | Saint Ay </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS for dark mode toggle button -->
+    <link href="dark-mode-toggle.css" rel="stylesheet">
+
+    <!-- Dark Reader API via jsDelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.16/darkreader.min.js"></script>
+    </head>
+    <body>
+
+        <main>
+            <div class="YB" >
+                <nav>
+                    <ul><li><a href="../index.html">Accueil</a></li>
+                        <li><a href="index.html">Municipalité</a></li>
+                        <li><a href="../Actualite/actualite.html">Actualités</a></li>
+                        <li><a href="../Jeunesse/Jeunesse.html">Jeunesse</a></li>
+                    </ul>
+                </nav>
+                <div class="Titre"  >
+                    <h1>La Ville De Saint AY </h1>
+                    <h2>  est à votre service</h1>
+                </div>
+            </div>
+            <button id="scrollToTopButton" onclick="scrollToTop()">&#8679;</button>
+                 
+            <div class="informations"  data-aos="zoom-in-up">     
+                <p>L'Agence Postale Communale et la Mairie sont fermées les samedis des semaines impaires.</p>
+                <p>En août : l’Agence Postale Communale et la Mairie ferment à 17h le lundi et sont fermées tous les samedis.</p>
+                <p>Permanence téléphonique :</p>
+                <ul>
+                    <li>-Du lundi au vendredi 9h-12h et 15h-17h. <br>-Le samedi 9h-12h (sauf semaines impaires et en août).</li>
+                </ul>
+                <p>M. le Maire reçoit sur rendez-vous en après midi</p>
+                <p>Tél. 02 38 88 44 44</p>
+                <p>Email : <a href="mailto:maire@ville-saint-ay.fr">maire@ville-saint-ay.fr                  <a href="infos-sup.html" >   - D'autres mail</a></a></p>
+                <button id="redirectButton">RDV avec le maire </button>
+        
+            </div>
+            <button id="openPopup" data-aos="zoom-out">Planning de la Mairie</button>
+            <br><br>
+            <br><br>
+            <div id="popupContainer" class="popup">
+                <span class="close" id="closePopup">&times;</span>
+                <img src="Planning.jpg" alt="Image Pop-up" class="popup-content">
+            </div>
+
+            <section id="economie" data-aos="zoom-out">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" id="left-ad">
+                            <a href="taf.html" class="image-link">
+                                <div class="image-container">
+                                    <img src="image-economie.png" alt="Image représentant l'économie locale" width="500" height="600" />
+                                </div>
+                                <p>Cliquez sur l'image pour explorer les données des commerçants</p>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6" id="right-ad">
+                            <form action="https://www.paypal.com/cgi-bin/webrsc" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="VOTRE_ID_DE_BOUTON_PAYPAL">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - Le moyen plus sûr et plus simple de payer en ligne!" style="margin: 0 auto; display: block;">
+                                <img alt="" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1"> <br>
+                                <p>Vos dons sont destinés au développement de notre ville.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+            <br><br>
+
+            <div class="card-container" >
+                <div class="card">
+                    <div class="card-content" data-aos="zoom-out">
+                        <h3>Église de Saint-Ay</h3>
+                        <div class="card-details">
+                            <img src="eglise.jpg" alt="" />
+                            <p class="cardText">
+                                L'église de Saint-Ay, dédiée à Saint Agylus, est un monument ancien.
+                                Elle a été agrandie au XIIIe siècle et restaurée après des dégradations lors des Guerres de Religion.
+                                L'église est classée monument historique, et elle se distingue par son style roman, ses vitraux et
+                                une précieuse châsse du XVIe siècle contenant les reliques de Saint Agylus.
+                            </p>
+                        </div>
+                        <a
+                                href="https://catholique-ouest-orleans.fr/saint-ay/#"
+                                class="btn"
+                                target="_blank"
+                        >Lire plus</a
+                        >
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" data-aos="zoom-out-down">
+                        <h3>Monument aux morts</h3>
+                        <div class="card-details">
+                            <img src="monument.jpg" alt="" />
+                            <p class="cardText">
+                                Lors de la guerre de 1870, les Bavarois occupent Saint-Ay qui paie un lourd tribut financier.
+                                Le téléphone et l'électricité sont installés en 1890.
+                                Lors de la guerre 1914-1918, plus de 50 Agyliens donneront leur vie pour libérer la France.
+                                Le monument aux morts érigé en 1921 place de la Mairie par une souscription publique a été réalisé par le sculpteur Camille Lefèvre.
+                            </p>
+                        </div>
+                        <a
+                                href="https://www.larep.fr/saint-ay-45130/actualites/le-monument-aux-morts-a-100-ans_14043687/"
+                                class="btn"
+                                target="_blank"
+                        >Lire plus</a
+                        >
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" data-aos="zoom-out-down" >
+                        <h3>L'Évêché</h3>
+                        <div class="card-details">
+                            <img src="eveche_vignes.jpg" alt="" />
+                            <p class="cardText">
+                                L'Evêché de Saint-Ay a une histoire riche. En 1310, l'Evêque Raoul Grospain y séjourne et rédige son testament.
+                                Les Rois de France y ont également séjourné. Cependant, les invasions et les guerres ont endommagé le château,
+                                qui a été reconstruit au XVIe siècle. En 1763, il a été cédé à un particulier, mettant fin à ses liens avec l'Evêché d'Orléans.
+                                En 1792, il a été vendu à François Marie Dhuicque, rompant ainsi ses derniers liens avec l'Evêché.
+                            </p>
+                        </div>
+                        <a
+                                href="https://www.larep.fr/widgetRss/saint-ay-45130/actualites/repondre-a-un-besoin-croissant_14375916/"
+                                class="btn"
+                                target="_blank"
+                        >Lire plus</a
+                        >
+                    </div>
+                </div>
+            </div>       
+ 
+        </main>
+        <footer>
+
+            <div class="container">
+                <div class ="sec aboutus" data-aos="zoom-out-down">
+                    <h2>Ville de Saint-Ay</h2>
+                    <img src="blason.png"/>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                        <ol>
+                            <li><a href="lien-vers-portail-famille"><span>Portail Famille</span></a></li>
+                            <li><a href="lien-vers-service-municipaux"><span>Service Municipaux</span></a></li>
+                            <li><a href="lien-vers-horaires-mairie"><span>Horaires de la mairie</span></a></li>
+                            <li><a href="https://www.canva.com/"><span>Actualités</span></a></li>
+                        </ol>
+                </div>
+                <div class ="sec contact">
+                    <h2>Contact</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span>Place de la Mairie,<br> 45130 Saint-Ay,<br>
+                                  Centre-Val de Loire</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <span><a href="tel:023888444">02 38 88 44 44</a></span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </footer>
+        <script>
+            document.getElementById("redirectButton").addEventListener("click", function() {
+                window.location.href = "RDV.html"; // Remplacez "RDV.html" par l'URL de la page vers laquelle vous souhaitez rediriger.
+            });
+        </script>    
+            <script src="sae.js"></script> <!-- Ajout de votre fichier JavaScript -->
+            <section class="banner"></section>
+            <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var nav = document.querySelector("nav");
+                nav.classList.toggle("sticky" , window.scrollY > 0)
+                })
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+        <script>
+            AOS.init();
+        </script>
+        
+
+ </body>
+</html>

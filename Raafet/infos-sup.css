@@ -1,0 +1,41 @@
+/* Styles pour la page d'informations du personnel communal */
+body {
+    background-color: #ffffff; /* Arrière-plan blanc */
+    font-family: 'Arial', sans-serif;
+    margin: 3% auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Réglez la largeur à 50% de la largeur de l'écran ou ajustez-la selon vos préférences */
+    border: 2px solid #ccc; /* Bordure de 2 pixels solide */
+    border-radius: 10%; /* Coins arrondis de 10 pixels */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre avec décalage de 5 pixels en horizontal et vertical, flou de 10 pixels */
+    padding: 5%; /* Espacement à l'intérieur du rectangle */
+}
+
+p {
+
+    margin: 5% 4% 2%;
+    text-align: justify; /* Justifiée */
+    font-size: 100%;
+}
+
+a {
+    color: #007bff; /* Couleur des liens bleus */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styles pour les petits écrans, comme les téléphones */
+@media (max-width: 1000px) {
+    body {
+        margin: 20% auto;
+        width: 80%; /* Largeur de 100% pour remplir l'écran */
+    }
+
+    p {
+        font-size: 90%; /* Réduisez la taille de police pour les petits écrans */
+        
+    }
+}

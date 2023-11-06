@@ -1,0 +1,39 @@
+#retour {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: rgb(127, 177, 220);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#retour:hover {
+    background-color: #215f90; /* Changement de couleur au survol */
+}
+
+/*la flesh*/
+/* Styles pour le bouton de retour en haut */
+#scrollToTopButton {
+    display: none ;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #a4cbf5;
+    color: #ffffff;
+    border: none;
+    border-radius: 500%;
+    cursor: pointer;
+    font-size: 160%;
+    text-align: center;
+
+  }
+  
+  #scrollToTopButton:hover {
+    background-color: #0056b3;
+  }
+  
